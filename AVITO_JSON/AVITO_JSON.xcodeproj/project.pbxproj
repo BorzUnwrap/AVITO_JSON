@@ -15,6 +15,7 @@
 		8454751626EA5B5900B10052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8454751426EA5B5900B10052 /* LaunchScreen.storyboard */; };
 		8454751F26EA5BDC00B10052 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454751E26EA5BDC00B10052 /* ResponseModel.swift */; };
 		8454752326EA5EDB00B10052 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454752226EA5EDB00B10052 /* ApiService.swift */; };
+		8454752626EA641C00B10052 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454752526EA641C00B10052 /* EmployeeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8454751726EA5B5900B10052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8454751E26EA5BDC00B10052 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		8454752226EA5EDB00B10052 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		8454752526EA641C00B10052 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,10 @@
 			children = (
 				8454750926EA5B5800B10052 /* AppDelegate.swift */,
 				8454750B26EA5B5800B10052 /* SceneDelegate.swift */,
+				8454750D26EA5B5800B10052 /* ViewController.swift */,
+				8454752426EA640200B10052 /* Cell */,
 				8454752126EA5EB900B10052 /* Services */,
 				8454751D26EA5BA100B10052 /* Models */,
-				8454750D26EA5B5800B10052 /* ViewController.swift */,
 				8454750F26EA5B5800B10052 /* Main.storyboard */,
 				8454751226EA5B5900B10052 /* Assets.xcassets */,
 				8454751426EA5B5900B10052 /* LaunchScreen.storyboard */,
@@ -87,6 +90,14 @@
 				8454752226EA5EDB00B10052 /* ApiService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		8454752426EA640200B10052 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8454752526EA641C00B10052 /* EmployeeTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 				8454750A26EA5B5800B10052 /* AppDelegate.swift in Sources */,
 				8454751F26EA5BDC00B10052 /* ResponseModel.swift in Sources */,
 				8454750C26EA5B5800B10052 /* SceneDelegate.swift in Sources */,
+				8454752626EA641C00B10052 /* EmployeeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
