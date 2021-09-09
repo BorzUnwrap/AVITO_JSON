@@ -11,21 +11,44 @@ import UIKit
 class EmployeesViewController: UIViewController {
 
     
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet var tableView: UITableView?
     
+    let apiService = ApiService.shared
+    let reachabilityService = NetworkReachability.shared
+    let storageService = StorageService.shared
     
-        var currentCompany: Company? {
-            didSet {
+    var currentCompany: Company? {
+        didSet {
             currentCompany?.employees.sort {$0.name < $1.name }
             tableView?.reloadData()
         }
     }
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        if !reachabilityService.isConnected {
+            guard let lastDate = storageService.fileModificationDate() else {
+                return
+            }
+            if Date().minutes(from: lastDate) <= 60 {
+                currentCompany = storageService.load()
+            }
+        } else {
+            fetchData()
+        }
+        
+        reachabilityService.netStatusChangeHandler = { [weak self] in
+            self?.fetchData()
+        }
+    }
+    
+    private func fetchData() {
+        apiService.fetchCompanies { [weak self] model in
+            self?.currentCompany = model.company
+            self?.storageService.write(data: model.company)
+        }
     }
 }
     

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8454750A26EA5B5800B10052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454750926EA5B5800B10052 /* AppDelegate.swift */; };
 		8454750C26EA5B5800B10052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454750B26EA5B5800B10052 /* SceneDelegate.swift */; };
-		8454750E26EA5B5800B10052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454750D26EA5B5800B10052 /* ViewController.swift */; };
+		8454750E26EA5B5800B10052 /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454750D26EA5B5800B10052 /* EmployeesViewController.swift */; };
 		8454751126EA5B5800B10052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8454750F26EA5B5800B10052 /* Main.storyboard */; };
 		8454751326EA5B5900B10052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8454751226EA5B5900B10052 /* Assets.xcassets */; };
 		8454751626EA5B5900B10052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8454751426EA5B5900B10052 /* LaunchScreen.storyboard */; };
@@ -18,13 +18,14 @@
 		8454752626EA641C00B10052 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454752526EA641C00B10052 /* EmployeeTableViewCell.swift */; };
 		8454752826EA696B00B10052 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454752726EA696B00B10052 /* NetworkReachability.swift */; };
 		8454752A26EA69F500B10052 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454752926EA69F500B10052 /* StorageService.swift */; };
+		8454752D26EA6C0900B10052 /* Date + Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454752C26EA6C0900B10052 /* Date + Diff.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8454750626EA5B5800B10052 /* AVITO_JSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVITO_JSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8454750926EA5B5800B10052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8454750B26EA5B5800B10052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8454750D26EA5B5800B10052 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8454750D26EA5B5800B10052 /* EmployeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
 		8454751026EA5B5800B10052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8454751226EA5B5900B10052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8454751526EA5B5900B10052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +35,7 @@
 		8454752526EA641C00B10052 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		8454752726EA696B00B10052 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 		8454752926EA69F500B10052 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		8454752C26EA6C0900B10052 /* Date + Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Diff.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,8 @@
 			children = (
 				8454750926EA5B5800B10052 /* AppDelegate.swift */,
 				8454750B26EA5B5800B10052 /* SceneDelegate.swift */,
-				8454750D26EA5B5800B10052 /* ViewController.swift */,
+				8454750D26EA5B5800B10052 /* EmployeesViewController.swift */,
+				8454752B26EA6BD000B10052 /* Extensions */,
 				8454752426EA640200B10052 /* Cell */,
 				8454752126EA5EB900B10052 /* Services */,
 				8454751D26EA5BA100B10052 /* Models */,
@@ -104,6 +107,14 @@
 				8454752526EA641C00B10052 /* EmployeeTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		8454752B26EA6BD000B10052 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8454752C26EA6C0900B10052 /* Date + Diff.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +188,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8454750E26EA5B5800B10052 /* ViewController.swift in Sources */,
+				8454752D26EA6C0900B10052 /* Date + Diff.swift in Sources */,
+				8454750E26EA5B5800B10052 /* EmployeesViewController.swift in Sources */,
 				8454752326EA5EDB00B10052 /* ApiService.swift in Sources */,
 				8454752826EA696B00B10052 /* NetworkReachability.swift in Sources */,
 				8454750A26EA5B5800B10052 /* AppDelegate.swift in Sources */,
@@ -330,6 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AVITO_JSON/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,6 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AVITO_JSON/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
