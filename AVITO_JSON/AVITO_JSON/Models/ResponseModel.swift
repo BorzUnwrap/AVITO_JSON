@@ -13,7 +13,7 @@ struct ResponseModel: Codable {
     var company: Company
 }
 
-struct Employee: Codable {
+struct Company: Codable {
     var name: String
     var employees: [Employee]
 }
