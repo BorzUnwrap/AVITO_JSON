@@ -16,6 +16,7 @@
 		8454751F26EA5BDC00B10052 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454751E26EA5BDC00B10052 /* ResponseModel.swift */; };
 		8454752326EA5EDB00B10052 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454752226EA5EDB00B10052 /* ApiService.swift */; };
 		8454752626EA641C00B10052 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454752526EA641C00B10052 /* EmployeeTableViewCell.swift */; };
+		8454752826EA696B00B10052 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454752726EA696B00B10052 /* NetworkReachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8454751E26EA5BDC00B10052 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		8454752226EA5EDB00B10052 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		8454752526EA641C00B10052 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		8454752726EA696B00B10052 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				8454752226EA5EDB00B10052 /* ApiService.swift */,
+				8454752726EA696B00B10052 /* NetworkReachability.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				8454750E26EA5B5800B10052 /* ViewController.swift in Sources */,
 				8454752326EA5EDB00B10052 /* ApiService.swift in Sources */,
+				8454752826EA696B00B10052 /* NetworkReachability.swift in Sources */,
 				8454750A26EA5B5800B10052 /* AppDelegate.swift in Sources */,
 				8454751F26EA5BDC00B10052 /* ResponseModel.swift in Sources */,
 				8454750C26EA5B5800B10052 /* SceneDelegate.swift in Sources */,
